@@ -8,63 +8,79 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+
+    <div id="headerBackground">
 <header>
-    <h1>Daniel Fairchild's Portfolio</h1>
+    <h1>Daniel Fairchild</h1>
     <span>Software Developer</span>
 </header>
+</div>
+
 
 <main>
-    <section id="aboutUs">
-        <h2>About us</h2>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <section id="aboutMe">
+        <h2>About Me</h2>
+        <br>
+        <div id=about>
+        <div id=aboutMeInfo>
+        <p> I am a software developer Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
         </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        </div>
+        <div id=aboutMePic>
+            <img id="cultLeader"src=./Images/cult_leader.png height=400px>
+        </div>
     </section>
 
-    <section id="ourProducts">
-       <h2> Our Products</h2>
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-    </p>
+    <section id="myProjects">
+       <h2>Projects</h2>
+        <p>Check out some of my recent projects below:</p>
     <div id="projects">
     <article>
-     <h3>Project 1</h3>
-     <img src="./images/project1.jpg">
-     <p>
+     <h3> Future Project 1</h3>
+     <img src="./images/futureProject1.jpg" alt="Beautiful Project">
+     <p class="productDescription">
         Project 1 description
      </p>
     </article>
     <article>
-        <h3>Project 2</h3>
-        <img src="./images/project2.jpg">
-        <p>
+        <h3>Future Project 2</h3>
+        <img src="./images/futureProject2.jpg" alt="Even more beautiful">
+        <p class="productDescription">
            Project 2 description
         </p>
-       </article>    <article>
-        <h3>Project 3</h3>
-        <img src="./images/project3.jpg">
-        <p>
+       </article>    
+       <article>
+        <h3>Future Project 3</h3>
+        <img src="./images/futureProject3.jpg" alt="The most beautiful project ever">
+        <p class="productDescription">
            Project 3 description
         </p>
        </article>
     </div>
     </section>
 
-    <section i="getInTouch">
-        <h2>Get in Touch</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-        </p>
+    <section id="Contact">
+        <h2>Contact</h2>
+        <br>
+       <div id="contactMe">
+       <div id="contactInfo">
         <ul>
-            <li>Email: d.e.fairchild@gmail.com</li>
-            <li>Phone: (330) 606-6958</li>
+            <li>Email: <a href="mailto:d.e.fairchild@gmail.com" style="color:#EE4266">d.e.fairchild@gmail.com</a></li>
+            <li>Phone: <a href="sms:(330) 606-6958&body=sup%20handsome" style="color: #EE4266">(330) 606-6958</a></li>
         </ul>
+        </div>
+        <div id="contactLinks">
+            <a href="https://github.com/mosdefinite"> <img src="Images/GitHub.png" alt="GitHub Logo" height=60px> </a>
+            <a href="www.linkedin.com/in/daniel-fairchild-a73360222"> <img src="Images/LinkedIn.png" alt="Linkedin Logo" height=50px> </a>
+        </div>
+    </div>
     </section>
 </main>
 
 <nav>
-    <a href="#aboutUs">About Us</a>
-    <a href="#ourProducts">Our Products</a>
-    <a href="#getInTouch">Get in Touch</a>
+    <a href="#aboutMe">About Me</a>
+    <a href="#myProjects">Projects</a>
+    <a href="#Contact">Contact</a>
 </nav>
 
 <footer>

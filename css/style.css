@@ -1,35 +1,75 @@
 *{
-    font-family: sans-serif;
+    font-family: helvetica;
+    color: #1F271B;
     line-height: 1.618em;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 
+    /* color: #ffd23f; Yellow
+    color: #540D6E; Purple
+    color: #EE4266; Pink
+    color: #F3FCF0; Whiteish
+    color: #1F271B; DarkGreen */
+
+
+
+}
+body
+{
+background-color: #F3FCF0;
 }
 
-h1, h2, h3 
+h1
 {
-    color: #666
+    font-weight: bolder;
+    color: #F3FCF0;
+}
+h2
+{
+    color: #ffd23f;
+}
+h3
+{
+    color: #ffd23f;
+}
+    
+
+#headerBackground
+{
+    /* background-color: #1F271B; */
+    background-image:url("/Images/banner2.pdf");
+    background-size: 100%;
+}
+@media only screen and (max-width:600){#headerBackground{background-color: #1F271B;}};
+
+
+
+hr
+{
+font-size: 5px;
 }
 
 html
 {
 font-size: 16px;
-margin-top: 3em;
 }
 
 header,
-main,
-footer
+main
 {
     margin: 0 auto;
-    max-width: 800px
-
+    max-width: 800px;
+}
+footer
+{
+margin: 0 auto;
 }
 
 header
 {
-    padding: 2em 0em;
+    padding: 5em 0em;
+    /* background-color: #ffd23f; */
 }
 
 header h1 
@@ -39,7 +79,7 @@ header h1
 header span 
 {
     font-size: 1.5em;
-    color:#999;
+    color:#ffd23f;
 }
 
 nav
@@ -51,20 +91,49 @@ width: 100%;
 
 display: flex;
 flex-flow: row;
-justify-content: center;
+justify-content:space-evenly;
 
-background: #333;
+background: #1F271B;
+opacity: 95%;
 }
 
 nav a 
 {
 padding: .5em 2em;
-color: white;
+color: #F3FCF0;
 text-decoration: none;
 }
 nav a:hover
 {
-    background: #666
+    /* background: #540D6E; */
+    color: #ffd23f;
+}
+
+#about
+{
+display:flex;
+flex-direction: row;
+
+
+}
+#aboutMeInfo
+{
+width: 50%;
+text-align: justify;
+text-justify: inter-word;
+}
+#aboutMePic
+{
+width: 50%;
+text-align: center;
+background-color: #ffd23f;
+border-radius: 25%;
+margin-left: 1em;
+}
+
+#cultLeader
+{
+    border-radius: 25%;
 }
 
 section 
@@ -90,26 +159,46 @@ display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-template-rows: auto;
 grid-column-gap: 1em;
+color: #F3FCF0;
 }
 
 #projects article
 {
-    background: #ccc;
+    background: #540D6E;
     padding: 1em;
 }
 
 #projects article img
 {
 width: 100%;
-border: 1px solid #333; 
+border: 1px solid #1F271B; 
+}
+.productDescription
+{
+    color: #F3FCF0;
+}
+
+#contactMe
+{
+display:flex;
+flex-direction: row;
+
+}
+#contactInfo
+{
+width: 50%;
+}
+#contactLinks
+{
+width: 50%;
 }
 
 footer
 {
 margin-top: 2em;
-margin-bottom: 1em;
-background: #666; 
-color: #fff;
+margin-bottom: 0em;
+background: #1F271B; 
+color: #F3FCF0;
 padding: 1em 0;
 text-align: center;
 }
