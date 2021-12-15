@@ -21,71 +21,99 @@
     <section id="aboutMe">
         <h2>About Me</h2>
         <br>
-        <div id=about>
-        <div id=aboutMeInfo>
-        <p> I am a software developer Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        <div id="about">
+        <div id="aboutMeInfo">
+        <p> I am a software developer with a background in graphic design and production management with experience managing multiple product lines in a small electronics company.  I saw, at an overhead level, what goes into the hardware side of tech. That gave me the production and business experience I needed to branch out and start a graphic design and printing business. This helped scratch my creative itch, but lacked the technical challenges and problem solving that I missed from my previous career. Looking to step up to a new challenge that will combine my creative skills with my newfound technical abilities to develop intuitive applications and websites.
         </p>
         </div>
-        <div id=aboutMePic>
-            <img id="cultLeader"src=./Images/cult_leader.png height=400px>
+        <div id="aboutMePic">
+            <img id="cultLeader"src="./Images/cult_leader_round.png">
         </div>
     </section>
-
+    
     <section id="myProjects">
-       <h2>Projects</h2>
-        <p>Check out some of my recent projects below:</p>
-    <div id="projects">
-    <article>
-     <h3> Future Project 1</h3>
-     <img src="./images/futureProject1.jpg" alt="Beautiful Project">
-     <p class="productDescription">
-        Project 1 description
-     </p>
-    </article>
-    <article>
-        <h3>Future Project 2</h3>
-        <img src="./images/futureProject2.jpg" alt="Even more beautiful">
-        <p class="productDescription">
-           Project 2 description
-        </p>
-       </article>    
-       <article>
-        <h3>Future Project 3</h3>
-        <img src="./images/futureProject3.jpg" alt="The most beautiful project ever">
-        <p class="productDescription">
-           Project 3 description
-        </p>
-       </article>
-    </div>
-    </section>
+      <h2>Recent Projects</h2>
+        <div class="document-center">
+          <div class="carousel-container">
+            <div class="carousel" id="carousel-1" auto-scroll="7000">
+              <section class="carousel-screen">
+                <img src="./Images/PetTracker1.png" alt=""/>
+                <!-- <section class="text-container">
+                  <p>Pet Health Tracker</p>
+                  <p> An app to keep track of all of your pets medical information</p>
+                  <p> C# ASP.Net API, Javascript, Node.js, HTML, CSS</p>
+                </section> -->
+              </section>
+              <section class="carousel-screen">
+                <img src="./Images/BrewstersBiscuits1.png" alt=""/>
+                <!-- <section class="text-container">
+                  <p>Brewsters Biscuits</p>
+                  <p>A basic click game inspired by Universal Paperclip</p>
+                  <p>Javascript, HTML, CSS</p>
+                </section> -->
+              </section>
+              <section class="carousel-screen">
+                <img src="./Images/AlbumCollection1.png" alt=""/>
+                <!-- <section class="text-container">
+                  <p>Album Collections </p>
+                  <p>Simple user interface to review your favourite artists, albums and songs.</p>
+                  <p>C# ASP.Net API, Node.js, HTML, CSS</p>
+                </section> -->
+              </section>
+            <section class="carousel-screen">
+              <img src="./Images/MovieReview1.png" alt=""/>
+              <!-- <section class="text-container">
+                <p>Movie Review Application</p>
+                <p>A site where users can review movies </p>
+                <p>C# ASP.Net MVC, HTML, CSS</p>
+              </section> -->
+            </section>
+ 
+              <section class="circle-container">
 
-    <section id="Contact">
-        <h2>Contact</h2>
-        <br>
-       <div id="contactMe">
-       <div id="contactInfo">
-        <ul>
-            <li>Email: <a href="mailto:d.e.fairchild@gmail.com" style="color:#EE4266">d.e.fairchild@gmail.com</a></li>
-            <li>Phone: <a href="sms:(330) 606-6958&body=sup%20handsome" style="color: #EE4266">(330) 606-6958</a></li>
-        </ul>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </section>
+              <div class="left-arrow">
+                <span class="chevron left"></span>
+              </div>
+              <div class="right-arrow">
+                <span class="chevron right"></span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div id="contactLinks">
-            <a href="https://github.com/mosdefinite"> <img src="Images/GitHub.png" alt="GitHub Logo" height=60px> </a>
-            <a href="www.linkedin.com/in/daniel-fairchild-a73360222"> <img src="Images/LinkedIn.png" alt="Linkedin Logo" height=50px> </a>
-        </div>
-    </div>
+        <script src="carousel.js"></script>
+
     </section>
+   
 </main>
 
 <nav>
     <a href="#aboutMe">About Me</a>
     <a href="#myProjects">Projects</a>
-    <a href="#Contact">Contact</a>
+    <a href="#contactMe">Contact</a>
 </nav>
 
 <footer>
-    
+    <h2>Contact</h2>
+    <br>
+   <div id="contactMe">
+   <div id="contactInfo">
+    <ul>
+        <li>Email: <a class="contactInfo" href="mailto:d.e.fairchild@gmail.com">d.e.fairchild@gmail.com</a></li>
+        <li>Phone: <a class="contactInfo" href="sms:(330) 606-6958&body=sup%20handsome" >(330) 606-6958</a></li>
+    </ul>
+    </div>
+    <div id="contactLinks">
+        <a href="https://github.com/mosdefinite"> <img src="Images/GitHub.png" alt="GitHub Logo" height=60px> </a>
+        <a href="https://linkedin.com/in/danfairchild"> <img src="Images/LinkedIn.png" alt="Linkedin Logo" height=50px> </a>
+    </div>
+</div>
 </footer>
+
 
 </body>
 </html>
