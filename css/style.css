@@ -23,25 +23,37 @@ margin-bottom: 1em;
 h1 {
     font-weight: bolder;
     color: #F3FCF0;
+    padding-left: 0.3em;
 }
 
 h2 {
     color: #ffd23f;
+    padding-left: 1em;
 }
 
 h3 {
     color: #ffd23f;
+    padding-left: 1em;
 }
     
 
 #headerBackground {
-    /* background-color: #1F271B; */
     background-image:url("/Images/banner2.pdf");
     background-size: 100%;
 }
 
-/* @media only screen and (max-width:800){#headerBackground{background-color: #1F271B}}; */
-
+@media only screen and (max-width: 800px){
+    #about {
+    display:flex;
+    flex-direction: column;
+    }
+    #aboutMePic{
+      display: none;
+    }
+    #headerBackground{
+      background-color: #1F271B;
+    }
+}
 
 html {
 font-size: 16px;
@@ -57,17 +69,12 @@ main {
 
 header {
     padding: 5em 0em;
-    /* background-color: #ffd23f; */
 }
 
 header h1 {
     font-size: 3em;
 }
 
-header span {
-    font-size: 1.5em;
-    color:#ffd23f;
-}
 
 nav {
 position: fixed;
@@ -96,21 +103,23 @@ nav a:hover {
 
 #about {
 display:flex;
-flex-direction: row;
+flex-direction: auto;
 }
 
 #aboutMeInfo {
-width: 50%;
+width: 100%;
 text-align: justify;
 text-justify: inter-word;
 color:#1F271B;
+padding: 1em;
 }
 
 #aboutMePic {
-width: 50%;
+width: 100%;
 text-align: center;
 background-color: #ffd23f;
-border-radius: 85%;
+background-size:auto;
+border-radius: 100%;
 margin-left: 1em;
 }
 
@@ -343,3 +352,5 @@ margin: 1em auto;
 position: absolute;
 width: 100%;
 }
+
+
